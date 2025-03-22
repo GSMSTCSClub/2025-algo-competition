@@ -8,7 +8,7 @@ OUTPUT_FOLDER_PATH = ""
 TESTS: list[list | str] = [
     [],  # configs for the inputs should be set here. Should be a list
     "",  # a full test can also be placed here as needed, this can be used to test weird edge cases 
-         # or for the test inputs. Should of a string.
+         # or for the test inputs. Should a string
 ]
 random.seed(0)
 
