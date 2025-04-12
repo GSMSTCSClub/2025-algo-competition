@@ -6,7 +6,7 @@ There are two main types:
 
 The order you arraign them in your slots is the order in which your attack is modified. What is the max attack you can have (round down to nearest integer)? All slots don't have to be filled.
 
-Input:
+## Input format
 >The first line contains the number of test cases (c)
 
 >For each test case
@@ -17,11 +17,30 @@ Input:
 
 >>The third line contains M floats separated by space of the Mul type artifact's corresponding multiplier
 
-Output:
-
+## Output format
 >for each test case, print an integer representing the rounded down (floor) maximum attack
 
-Constraints:
+### Sample input:
+```
+2
+4 100 3 3
+100 200 150 
+2 1.5 1.2
+5 0 5 5
+1 1 1 1 1
+1.1 1.1 1.1 1.1 2.1
+```
+### Sample output:
+```
+1350
+8
+```
+### Explanation:
+1350 is acquired from calculation $(100+200+150)*2*1.5$ since 100 is base attack. 
+
+8 is acquired from calculation $(1+1+1+1)*2.1$ which rounds down to 8
+
+### Constraints
 >1 <= T < 8
 
 >0 <= N < 64

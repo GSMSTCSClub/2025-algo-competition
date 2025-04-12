@@ -12,20 +12,8 @@ The second line is the number of entries "e" in the gacha's details dictionary
 Each line in the dictionary contains the $n$ number of wishes you must have done (not counting the current wish being done) and $r$ - the rate of winning (in percentage)  
 The dictionary is sorted and guarantees an entry of 0 wishes done
 
-## Input format
-
-
-## Constraints
-basic:
-$0<=w<=1024$
-$0<=e<=1024$
-$0<=n<=1024$
-$0<=r<=100$
-## Output: 
-True or False if the rate of winning the character given the number of wishes you have is higher than 50%
-
-
-## Sample input:
+## Sample 0
+### Sample input:
 ```
 2
 60
@@ -38,11 +26,13 @@ True or False if the rate of winning the character given the number of wishes yo
 0:1
 40:2
 ```
-## Sample output:
+### Sample output:
 ```
+False
+True
 ```
 
-## Explanation
+### Explanation:
 The gacha base rate is 0.6% per wish
 
 After 40 wishes, the 41st (1 indexing) to 80th wishes have the rate of 1.2% per wish
@@ -50,3 +40,14 @@ After 40 wishes, the 41st (1 indexing) to 80th wishes have the rate of 1.2% per 
 The character is guaranteed after 80 wishes
 
 After hitting hard-pity more times than I can count, I assure you 60 wishes isn't sufficient for a 50% chance of winning
+
+
+## Constraints
+basic:
+$0<=w<=1024$
+$0<=e<=1024$
+$0<=n<=1024$
+$0<=r<=100$
+## Output: 
+True or False if the rate of winning the character given the number of wishes you have is higher than 50%
+

@@ -10,7 +10,7 @@ CeilM = 8
 CeilAdd = 64
 CeilMul = 8
 
-FOLDER_PATH = "code-golf/minMaxEquiptments/test-data"
+FOLDER_PATH = "test-data"
 TESTS: list[list | str] = [ 
 """\
 2
@@ -39,7 +39,7 @@ def solution():
     from functools import reduce
     for _ in range(int(input().strip()) ):
         N, I, A, M = map(int, input().strip().split(" "))
-        N=max(N, A+M)
+        N=min(N, A+M)
         D=max(0,N-A)
         adds = sorted(list(map(float, input().strip().split(" "))), reverse=True)[0:min(A, N)][::-1] if A else [0]
         muls = sorted(list(map(float, input().strip().split(" "))), reverse=True) if M else [1]
