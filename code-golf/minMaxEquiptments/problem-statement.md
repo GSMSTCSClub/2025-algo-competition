@@ -4,7 +4,7 @@ There are two main types:
 >Add: give you an fixed increase in attack
 >Mul: multiply your attack by some amount
 
-The order you arraign them in your slots is the order in which your attack is modified. What is the max attack you can have (round down to nearest integer)?
+The order you arraign them in your slots is the order in which your attack is modified. What is the max attack you can have (round down to nearest integer)? All slots don't have to be filled.
 
 Input:
 >The first line contains the number of test cases (c)
@@ -22,14 +22,16 @@ Output:
 >for each test case, print an integer representing the rounded down (floor) maximum attack
 
 Constraints:
->0 <= N < 10^8
+>1 <= T < 8
 
->0 <= I < 10^4
+>0 <= N < 64
 
->0 <= A < 10^8
+>0 <= I < 64
 
->0 <= M < 10^8
+>0 <= A < 64
 
->0 <= Add amount < 10^4
+>0 <= M < 8
 
->1 <= Mul factor < 10^2
+>0 <= Add amount < 64
+
+>1 <= Mul factor < 8

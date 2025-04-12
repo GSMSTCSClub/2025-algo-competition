@@ -1,8 +1,12 @@
+# Racing down the screen
+
 You are the developer of a simple game where a car goes down a track, the player can move the car left or right.
 
 To spice things up, players can create and publish their own racetrack, however, you must determine if the racetrack is valid.
 
 The race track is valid if it contains a complete road (not obstructed by obstacles) that can be travelled by goind down, left, or right one at a time.
+
+## Input format
 
 Input:
 >The first line contains the number of test cases (c)
@@ -18,3 +22,8 @@ Input:
 Output:
 
 >for each test case, print True or False if the player can travel from the starting anywhere from the top row to the bottom row.
+
+## Constraints
+$0<c<8$
+$0<w<100$
+$0<l<100$
