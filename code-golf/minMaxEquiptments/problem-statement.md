@@ -2,6 +2,7 @@ As a full-time gamer, you need to maximize your attack stat. You have a fixed nu
 
 There are two main types:
 >Add: give you an fixed increase in attack
+
 >Mul: multiply your attack by some amount
 
 The order you arraign them in your slots is the order in which your attack is modified. What is the max attack you can have (round down to nearest integer)? All slots don't have to be filled.
@@ -38,7 +39,7 @@ The order you arraign them in your slots is the order in which your attack is mo
 ### Explanation:
 1350 is acquired from calculation $(100+200+150)*2*1.5$ since 100 is base attack. 
 
-8 is acquired from calculation $(1+1+1+1)*2.1$ which rounds down to 8
+8 is acquired from calculation $(1+1+1+1)*2.1$ which rounds down to 8˝
 
 ### Constraints
 >1 <= T < 8
