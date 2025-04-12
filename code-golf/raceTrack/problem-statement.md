@@ -8,20 +8,37 @@ The race track is valid if it contains a complete road (not obstructed by obstac
 
 ## Input format
 
-Input:
->The first line contains the number of test cases (c)
+The first line contains the number of test cases (c)
 
->Each test case contains:
+Each test case contains:
 
->>w,l (width and length of the race track separated by comma)
+w,l (width and length of the race track separated by comma)
 
->>l lines with each line containing w:
+l lines with each line containing w:
 
->>>w characters of the obstacle (1) or road square (0).
+w characters of the obstacle (1) or road square (0).
 
-Output:
+## Output format
 
 >for each test case, print True or False if the player can travel from the starting anywhere from the top row to the bottom row.
+
+## Sample 0
+### Sample input:
+```
+1
+3 5
+000
+110
+010
+010
+011
+```
+### Sample output:
+```
+False
+```
+### Explanation:
+The 1 in the middle of the second to last row prevented the racetrack to be continuous˝
 
 ## Constraints
 $0<c<8$
